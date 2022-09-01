@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap"
 import { items } from "../data/data"
 import { StoreItem } from "../components/StoreItem"
 export const Store = () => {
-    const [data, setData] = useState(items)
+    
     return (
         <>
             <h1>Store</h1>
@@ -11,10 +11,11 @@ export const Store = () => {
             md={2} xs={1} lg={3}
             className="g-3"
             >
-                {data.map((item) => {
+                {items.map((item) => {
                     return (
                         <Col key={item.id}>
                             <StoreItem 
+                            {...item.id}
                             id={item.id}
                             name={item.name}
                             price={item.price}
