@@ -6,4 +6,6 @@ for(let i = 0; i < 15; i++) {
         id:i,
         name:faker.commerce.product(),
         price:faker.commerce.price(100, 500, 2)})
+
+   
 }
