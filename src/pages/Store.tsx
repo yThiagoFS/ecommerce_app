@@ -15,7 +15,6 @@ export const Store = () => {
                     return (
                         <Col key={item.id}>
                             <StoreItem 
-                            {...item.id}
                             id={item.id}
                             name={item.name}
                             price={item.price}
