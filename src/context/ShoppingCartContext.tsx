@@ -29,7 +29,6 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps){
     const cartQuantity = cartItems.reduce((quantity, item) => item.quantity + quantity, 0)
 
     function getItemQuantity(id: number){
-        console.log(cartItems)
         return cartItems.find(item =>  item.id === id)?.quantity || 0
     }
 
